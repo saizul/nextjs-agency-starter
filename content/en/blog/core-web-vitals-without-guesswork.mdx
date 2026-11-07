@@ -1,0 +1,31 @@
+---
+title: "Core Web Vitals without the guesswork"
+description: "A simple routine for finding what slows a page down and fixing the biggest wins first."
+date: "2026-08-20"
+tags: ["Performance", "SEO"]
+---
+
+A fast site is easier to rank and nicer to use. The trick is to measure first, so you fix what actually matters.
+
+## Start with field data
+
+Lab tools such as Lighthouse are useful for debugging, but real visitors are the ground truth. Check the Core Web Vitals report in Search Console, then reproduce problems locally.
+
+## The usual suspects
+
+1. **Large images.** Serve correctly sized files and give every image width and height to avoid layout shifts.
+2. **Render-blocking scripts.** Defer anything that is not needed for the first paint.
+3. **Web fonts.** Preload only what you use and let text show immediately with a fallback.
+4. **Third-party widgets.** Each one costs time. Remove the ones nobody looks at.
+
+## Prefer static output
+
+Pages that are generated at build time and served from a CDN are hard to beat. They have no server wait, and caching does the rest.
+
+```ts
+export const dynamic = "force-static";
+```
+
+## Keep it that way
+
+Performance decays quietly. Add a budget to your pull request checks and review the numbers monthly, so a heavy new feature does not undo months of careful work.

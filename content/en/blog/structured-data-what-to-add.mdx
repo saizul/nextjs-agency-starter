@@ -1,0 +1,35 @@
+---
+title: "Structured data: what to add and what to skip"
+description: "A short guide to the JSON-LD types that earn their keep on a typical agency or portfolio site."
+date: "2026-06-02"
+tags: ["SEO", "Structured data"]
+---
+
+Structured data helps search engines understand your pages. It does not guarantee rich results, but it removes ambiguity.
+
+## Worth adding
+
+- **Organization** on the home page, with your name, logo and URL.
+- **WebSite** to describe the site and its language.
+- **BreadcrumbList** on nested pages so the hierarchy is clear.
+- **Article** on blog posts, with dates and an author.
+- **FAQPage** only where the questions and answers are visible on the page.
+- **Service** on pages that describe a service you sell.
+
+## Usually skip
+
+Review markup for your own business, fake ratings and anything that does not appear on the page. It breaks guidelines and risks a manual action.
+
+## Implementation tip
+
+Generate JSON-LD from the same data that renders the page. That keeps the markup honest and removes a whole class of drift bugs.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": []
+}
+```
+
+Validate with a testing tool after each change, and keep the builders covered by unit tests.

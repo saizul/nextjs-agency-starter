@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "siteName": "Acme Digital",
+    "tagline": "Search-first websites and automation",
+    "description": "Acme Digital is a placeholder agency brand: fast websites, technical SEO and workflow automation for growing businesses."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "caseStudies": "Case studies",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content",
+    "primary": "Primary navigation",
+    "footerNav": "Footer navigation",
+    "language": "Language",
+    "switchLanguage": "Switch language",
+    "toggleTheme": "Toggle colour theme",
+    "breadcrumb": "Breadcrumb"
+  },
+  "common": {
+    "readMore": "Read more",
+    "minRead": "{min} min read",
+    "sampleBadge": "Sample content",
+    "published": "Published",
+    "updated": "Updated",
+    "tags": "Tags",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "startProject": "Start a project",
+    "bookCall": "Book a discovery call",
+    "results": "Results",
+    "industry": "Industry",
+    "duration": "Timeline",
+    "client": "Client",
+    "deliverables": "What you get",
+    "faq": "Frequently asked questions",
+    "related": "Related services",
+    "pageOf": "Page {page} of {total}",
+    "newer": "Newer posts",
+    "older": "Older posts",
+    "pagination": "Pagination"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Websites, SEO and automation",
+      "title": "Websites that rank, load fast and quietly do the busywork",
+      "subtitle": "Acme Digital builds search-friendly websites and connects your tools so leads, reports and follow-ups run without manual effort.",
+      "primaryCta": "Start a project",
+      "secondaryCta": "See our work",
+      "statsNote": "Illustrative figures for the template.",
+      "stats": [
+        { "value": "98+", "label": "Typical Lighthouse score" },
+        { "value": "2 wks", "label": "To a first launch" },
+        { "value": "24 h", "label": "Reply time" }
+      ]
+    },
+    "services": {
+      "title": "What we do",
+      "intro": "Four focused services that work well alone and even better together."
+    },
+    "process": {
+      "title": "How a project runs",
+      "intro": "A simple, transparent process with a clear deliverable at every stage.",
+      "steps": [
+        {
+          "title": "Discover",
+          "body": "We review goals, audience, current rankings and the tools you already use."
+        },
+        {
+          "title": "Plan",
+          "body": "You receive a scoped roadmap with priorities, milestones and a fixed price."
+        },
+        {
+          "title": "Build",
+          "body": "Short build cycles with a live preview link, so feedback never waits for a big reveal."
+        },
+        {
+          "title": "Grow",
+          "body": "We launch, measure, and keep improving rankings, speed and conversion."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Selected case studies",
+      "intro": "Fictional examples that show how a write-up can be structured."
+    },
+    "testimonials": {
+      "title": "Kind words",
+      "intro": "Replace these placeholders with real client feedback before you launch.",
+      "sampleNote": "Sample testimonials. Not from real clients.",
+      "items": [
+        {
+          "quote": "The new site loads instantly and our enquiries doubled within a quarter. Everything was explained in plain language.",
+          "name": "Sample Person One",
+          "role": "Operations lead, example retail company"
+        },
+        {
+          "quote": "They automated our weekly reporting. What used to take an afternoon now lands in our inbox on Monday morning.",
+          "name": "Sample Person Two",
+          "role": "Founder, example consultancy"
+        },
+        {
+          "quote": "Clear scope, honest estimates and no surprises. Exactly what we hoped for from a small team.",
+          "name": "Sample Person Three",
+          "role": "Marketing manager, example software firm"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "intro": "Fixed-scope packages. Every price below is a placeholder for you to edit.",
+      "note": "Prices are examples in USD and exclude taxes.",
+      "popular": "Most popular",
+      "plans": [
+        {
+          "name": "Launch",
+          "price": "$1,200",
+          "period": "one-off",
+          "description": "A fast, well-structured site for a small business.",
+          "features": [
+            "Up to 5 pages",
+            "Technical SEO foundations",
+            "Contact form with spam protection",
+            "Two rounds of revisions"
+          ],
+          "cta": "Choose Launch",
+          "highlight": false
+        },
+        {
+          "name": "Grow",
+          "price": "$3,400",
+          "period": "one-off",
+          "description": "A content-ready site with a blog and tracking in place.",
+          "features": [
+            "Up to 15 pages",
+            "Blog with structured data",
+            "Analytics and conversion setup",
+            "Basic workflow automation",
+            "30 days of support"
+          ],
+          "cta": "Choose Grow",
+          "highlight": true
+        },
+        {
+          "name": "Scale",
+          "price": "$900",
+          "period": "per month",
+          "description": "Ongoing SEO, automation and performance work.",
+          "features": [
+            "Monthly technical audit",
+            "Content and keyword roadmap",
+            "Automation maintenance",
+            "Priority support"
+          ],
+          "cta": "Choose Scale",
+          "highlight": false
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "intro": "Can't find what you need? Send us a message.",
+      "items": [
+        {
+          "q": "How long does a typical project take?",
+          "a": "A five-page site usually launches within two weeks of the plan being approved. Larger builds with custom automation take four to eight weeks."
+        },
+        {
+          "q": "Do you work with an existing website?",
+          "a": "Yes. We can audit and improve what you have, migrate it safely, or rebuild only the parts that hold performance back."
+        },
+        {
+          "q": "Will I be able to edit content myself?",
+          "a": "Content lives in simple text files or your preferred CMS. We document the workflow so your team can publish without a developer."
+        },
+        {
+          "q": "How do you measure SEO success?",
+          "a": "We agree on a small set of metrics up front, such as qualified organic sessions, enquiries and ranking for priority pages, and report on them monthly."
+        },
+        {
+          "q": "What tools can you automate?",
+          "a": "Anything with an API or a webhook: forms, CRMs, spreadsheets, email platforms and messaging tools. We use n8n and custom scripts."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to build something that lasts?",
+      "body": "Tell us about your project. We reply within one business day with honest next steps.",
+      "button": "Talk to us"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Practical help for teams that want to be found, load fast and spend less time on repetitive work.",
+    "metaDescription": "Technical SEO, web development, workflow automation and content strategy from Acme Digital.",
+    "items": [
+      {
+        "slug": "technical-seo",
+        "icon": "search",
+        "name": "Technical SEO",
+        "summary": "Audits and fixes that help search engines crawl, understand and rank your pages.",
+        "description": "We find what is holding your site back in search and fix it: crawl budget, indexation, internal links, structured data and Core Web Vitals. You receive a prioritised action list, and we can implement the changes with you.",
+        "deliverables": [
+          "Full crawl and indexation audit",
+          "Structured data and metadata plan",
+          "Prioritised fix list with effort estimates"
+        ],
+        "faq": [
+          {
+            "q": "How quickly will rankings improve?",
+            "a": "Technical fixes can show effects within weeks, but competitive terms usually take three to six months. We set realistic expectations before we begin."
+          },
+          {
+            "q": "Do you need access to my analytics?",
+            "a": "Read-only access to Search Console and analytics helps us a lot, but we can start with a public crawl."
+          }
+        ]
+      },
+      {
+        "slug": "web-development",
+        "icon": "code",
+        "name": "Web development",
+        "summary": "Fast, accessible, maintainable websites built on modern tooling.",
+        "description": "We design and build marketing sites and content platforms that are accessible, secure and quick on slow phones. Static generation, clean markup and typed code keep them cheap to host and easy to change.",
+        "deliverables": [
+          "Responsive, accessible UI",
+          "Static-first build with great Core Web Vitals",
+          "Documentation and a handover session"
+        ],
+        "faq": [
+          {
+            "q": "Which stack do you use?",
+            "a": "Next.js, TypeScript and Tailwind CSS are our defaults, but we choose the simplest tool that meets the goal."
+          },
+          {
+            "q": "Can you work with my designer?",
+            "a": "Absolutely. We can implement an existing design system or help shape one."
+          }
+        ]
+      },
+      {
+        "slug": "workflow-automation",
+        "icon": "workflow",
+        "name": "Workflow automation",
+        "summary": "Connect forms, CRMs and reporting so routine tasks run by themselves.",
+        "description": "We map the repetitive work in your week and automate it with webhooks, n8n and small custom scripts. Think lead routing, instant notifications, report generation and data clean-up, all signed, logged and easy to monitor.",
+        "deliverables": [
+          "Process map of what to automate first",
+          "Secure, monitored workflows",
+          "Runbook so your team can maintain them"
+        ],
+        "faq": [
+          {
+            "q": "Is my data safe?",
+            "a": "Requests are signed, secrets stay in environment variables and we only move the data each workflow needs."
+          },
+          {
+            "q": "What if a workflow fails?",
+            "a": "Every workflow reports failures to a channel of your choice and retries safely where possible."
+          }
+        ]
+      },
+      {
+        "slug": "content-strategy",
+        "icon": "pen",
+        "name": "Content strategy",
+        "summary": "Keyword research and editorial plans that attract the right readers.",
+        "description": "We turn search demand into a content roadmap: topics, page types, internal linking and a publishing rhythm that your team can sustain. Briefs are written so any good writer can deliver them.",
+        "deliverables": [
+          "Keyword and intent map",
+          "Quarterly editorial calendar",
+          "Briefs and on-page guidelines"
+        ],
+        "faq": [
+          {
+            "q": "Do you write the content?",
+            "a": "We can, or we can brief your writers and edit their drafts. Whichever fits your budget."
+          },
+          {
+            "q": "How many articles do we need?",
+            "a": "Fewer than you think. A focused set of strong pages usually beats a large number of thin ones."
+          }
+        ]
+      }
+    ]
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "intro": "Fictional projects written to show the format. Swap them for your own work.",
+    "metaDescription": "Sample case studies showing how an SEO, web and automation project can be presented.",
+    "backToAll": "All case studies",
+    "sampleNote": "This is a fictional case study included as sample content.",
+    "empty": "No case studies yet."
+  },
+  "blog": {
+    "title": "Blog",
+    "intro": "Notes on SEO, performance and automation.",
+    "metaDescription": "Practical articles on technical SEO, web performance and workflow automation.",
+    "allPosts": "All posts",
+    "tagTitle": "Posts tagged \"{tag}\"",
+    "tagDescription": "Articles about {tag}.",
+    "browseTags": "Browse by topic",
+    "empty": "No posts yet.",
+    "rss": "RSS feed",
+    "by": "By {author}",
+    "share": "Written for people first, search engines second."
+  },
+  "about": {
+    "title": "About",
+    "intro": "A small team that cares about speed, clarity and craft.",
+    "metaDescription": "Learn how Acme Digital works and what we value.",
+    "story": [
+      "Acme Digital is a placeholder brand for this open-source starter. Replace this copy with your own story: who you are, who you help and why you do it.",
+      "A good about page is specific. Mention the problems you solve, the way you work and a few proof points that a visitor can verify.",
+      "Keep it short, human and honest. People hire people, and clarity builds trust faster than adjectives."
+    ],
+    "valuesTitle": "What we value",
+    "values": [
+      {
+        "title": "Clarity over jargon",
+        "body": "Plain language in proposals, reports and code comments."
+      },
+      {
+        "title": "Speed as a feature",
+        "body": "Every kilobyte is a cost to someone on a slow connection."
+      },
+      {
+        "title": "Automation with care",
+        "body": "Automate the boring parts, keep a human in the loop for the important ones."
+      }
+    ],
+    "templateBy": "This template is open source and maintained by {author}."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Tell us what you need. A short message is plenty, and we will follow up with questions.",
+    "metaDescription": "Get in touch with Acme Digital to discuss a website, SEO or automation project.",
+    "emailLabel": "Email",
+    "responseNote": "We reply within one business day.",
+    "form": {
+      "name": "Your name",
+      "email": "Email address",
+      "company": "Company (optional)",
+      "budget": "Budget (optional)",
+      "budgetPlaceholder": "Select a range",
+      "budgetOptions": {
+        "under-2k": "Under $2,000",
+        "2k-5k": "$2,000 to $5,000",
+        "5k-15k": "$5,000 to $15,000",
+        "15k-plus": "More than $15,000",
+        "not-sure": "Not sure yet"
+      },
+      "message": "How can we help?",
+      "messageHint": "At least 20 characters.",
+      "honeypotLabel": "Leave this field empty",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successTitle": "Thank you, your message was sent",
+      "successBody": "We will get back to you within one business day.",
+      "errorSummary": "Please fix the following before sending:",
+      "errors": {
+        "validation": "Some fields need your attention.",
+        "rate_limited": "Too many messages from your connection. Please wait a few minutes and try again.",
+        "not_configured": "The contact form is not configured on this site yet.",
+        "delivery_failed": "We could not deliver your message. Please try again or email us directly."
+      },
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageShort": "Please write at least 20 characters.",
+        "messageLong": "Please keep your message under 4000 characters.",
+        "budgetInvalid": "Please choose one of the options."
+      }
+    }
+  },
+  "footer": {
+    "blurb": "Fast websites, technical SEO and automation for growing businesses.",
+    "explore": "Explore",
+    "company": "Company",
+    "copyright": "© {year} Acme Digital. All rights reserved.",
+    "builtWith": "Built with Next.js and Tailwind CSS. Template by {author}."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "home": "Back to the home page"
+  }
+}

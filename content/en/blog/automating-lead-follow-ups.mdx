@@ -1,0 +1,33 @@
+---
+title: "Automating lead follow-ups with signed webhooks"
+description: "How to send contact form submissions to your automation tool safely, with a signature the receiver can verify."
+date: "2026-07-15"
+tags: ["Automation", "Webhooks"]
+---
+
+The fastest way to lose a lead is to let the enquiry sit in an inbox. A small webhook can notify the right person within seconds.
+
+## The flow
+
+1. A visitor submits the contact form.
+2. The server validates the input and rejects bots.
+3. The server sends a JSON payload to your automation tool, such as n8n.
+4. The tool creates a CRM record and notifies your team.
+
+## Sign the request
+
+Anyone who learns the webhook URL could post fake leads. A shared secret fixes that. The sender computes an HMAC of the timestamp and body, and the receiver recomputes it.
+
+```ts
+import { createHmac } from "node:crypto";
+
+const signature = createHmac("sha256", secret)
+  .update(`${timestamp}.${body}`)
+  .digest("hex");
+```
+
+Send the signature and timestamp as headers, and reject requests whose timestamp is older than a few minutes.
+
+## Handle failure
+
+Webhooks fail sometimes. Return a clear error to the visitor, log the failure and keep a fallback email address on the page. A good automation is one you can trust when something goes wrong.

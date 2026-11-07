@@ -1,0 +1,39 @@
+---
+title: "A practical technical SEO checklist for small sites"
+description: "Ten checks that catch most crawling, indexing and metadata problems before they cost you traffic."
+date: "2026-09-12"
+tags: ["SEO", "Technical SEO"]
+---
+
+Technical SEO sounds intimidating, but most small sites lose traffic to the same handful of problems. Work through this list once a quarter and you will catch the majority of them.
+
+## Crawling and indexing
+
+Search engines can only rank what they can reach. Confirm these first:
+
+- `robots.txt` does not block pages you want in results.
+- Every important page appears in the XML sitemap and returns a `200` status.
+- Pages you do not want indexed use `noindex`, not just a robots rule.
+- There is one canonical URL per page, and it points to itself.
+
+## Metadata
+
+Each page needs a unique title and description that match what the page offers. Keep titles under roughly 60 characters so they are not cut off.
+
+```html
+<title>Technical SEO audits | Acme Digital</title>
+<meta name="description" content="Find and fix what holds your site back in search." />
+<link rel="canonical" href="https://example.com/services/technical-seo" />
+```
+
+## Structure and links
+
+Use one `h1` per page and a logical heading order. Link to important pages from other relevant pages with descriptive anchor text, because "click here" tells a crawler nothing.
+
+## Speed and stability
+
+Measure real-user data where possible. Largest Contentful Paint, Interaction to Next Paint and Cumulative Layout Shift are the metrics to watch.
+
+## What to do next
+
+Fix the problems that affect many pages first, then the ones on your highest-value pages. Re-crawl, compare, and keep a short changelog so you can connect improvements to results.
