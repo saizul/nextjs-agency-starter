@@ -1,13 +1,9 @@
 import type { NextConfig } from "next";
+import { buildSecurityHeaders } from "./src/lib/security-headers";
 
 const isStaticExport = process.env.STATIC_EXPORT === "true";
 
-const securityHeaders = [
-  { key: "X-Content-Type-Options", value: "nosniff" },
-  { key: "X-Frame-Options", value: "SAMEORIGIN" },
-  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
-];
+const securityHeaders = buildSecurityHeaders({ dev: process.env.NODE_ENV === "development" });
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
