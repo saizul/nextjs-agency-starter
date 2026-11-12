@@ -24,16 +24,17 @@ npm run dev
 
 Open <http://localhost:3000>. You are redirected to `/en` or `/bn` based on your browser language.
 
-| Script              | What it does                                       |
-| ------------------- | -------------------------------------------------- |
-| `npm run dev`       | Start the development server                       |
-| `npm run build`     | Create the production build                        |
-| `npm start`         | Serve the production build                         |
-| `npm run lint`      | ESLint                                             |
-| `npm run typecheck` | TypeScript in strict mode                          |
-| `npm test`          | Vitest unit tests                                  |
-| `npm run test:e2e`  | Playwright smoke tests (run `npm run build` first) |
-| `npm run format`    | Prettier                                           |
+| Script                  | What it does                                                             |
+| ----------------------- | ------------------------------------------------------------------------ |
+| `npm run dev`           | Start the development server                                             |
+| `npm run build`         | Create the production build                                              |
+| `npm start`             | Serve the production build                                               |
+| `npm run lint`          | ESLint                                                                   |
+| `npm run typecheck`     | TypeScript in strict mode                                                |
+| `npm test`              | Vitest unit tests                                                        |
+| `npm run test:e2e`      | Playwright smoke tests (run `npm run build` first)                       |
+| `npm run content:check` | Editorial audit of `content/` (links, images, SEO lengths, translations) |
+| `npm run format`        | Prettier                                                                 |
 
 ## Project structure
 
@@ -121,6 +122,27 @@ Posts that exist in only one language are handled: hreflang lists only the avail
 ### Case study
 
 Create `content/en/case-studies/my-project.mdx` with `title`, `summary`, `date`, `client`, `industry`, `services`, `duration`, `cover` (a path under `public/`, SVG or PNG), `results` and optional `featured`. Invalid frontmatter fails the build with the file name and the field that is wrong.
+
+### Checking content before you publish
+
+The build only fails on invalid frontmatter, and it stops at the first bad file. `npm run content:check` (`scripts/content-check.ts`, rules in `src/lib/content-audit.ts`) reads every MDX file and reports all problems at once:
+
+| Errors (exit code 1)                                                                                                  | Warnings                                                                |
+| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Frontmatter that does not match the schema (every field, every file)                                                  | Title over 60 characters, description/summary outside 50-160 characters |
+| Internal links to posts, case studies, services, tags or pagination pages that do not exist (drafts count as missing) | Links without a locale prefix (`/blog/x`) or relative links             |
+| Images, files and case-study covers missing from `public/`                                                            | Posts dated in the future that are not drafts                           |
+| `updated` earlier than `date`                                                                                         | Duplicate titles, one tag spelled two ways (`SEO` / `seo`)              |
+| File names that are not clean URL slugs                                                                               | Non-Latin titles without `ogTitle`; posts missing a translation         |
+
+```text
+$ npm run content:check
+error  en/blog/my-post.mdx: broken internal link /en/blog/old-slug
+warn   en/blog/my-post.mdx: description is 182 characters; aim for 50-160
+content check: 1 error(s), 1 warning(s)
+```
+
+Use `-- --strict` to fail on warnings too, or `-- --json` for machine-readable output. CI runs the check on every push.
 
 ### Services, pricing, FAQ and other copy
 

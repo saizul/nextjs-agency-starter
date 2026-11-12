@@ -20,6 +20,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
+    "content:check": "tsx scripts/content-check.ts",
     "clean": "rm -rf .next out coverage test-results playwright-report tsconfig.tsbuildinfo"
   },
   "dependencies": {
@@ -41,6 +42,7 @@
     "postcss": "8.5.32",
     "prettier": "3.9.10",
     "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
     "typescript": "5.9.3",
     "vitest": "4.1.12"
   }

@@ -7,6 +7,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 
 ### Added
 
+- `npm run content:check`: an editorial audit of `content/` that reports every invalid frontmatter field, broken internal link, missing image or cover, out-of-order date, unclean slug, SEO length problem, duplicate title, inconsistent tag spelling, missing `ogTitle` and missing translation in one run. Rules live in `src/lib/content-audit.ts` with unit tests; CI runs it.
 - Security headers are now built by `src/lib/security-headers.ts` (with tests) and add a Content-Security-Policy, Strict-Transport-Security and Cross-Origin-Opener-Policy in production builds.
 
 ## [1.0.0] - 2026-11-07
